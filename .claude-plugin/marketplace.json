@@ -1,0 +1,16 @@
+{
+  "name": "work-session",
+  "owner": {
+    "name": "blankhoney"
+  },
+  "metadata": {
+    "description": "Prompt-only Work Session skills for Claude Code and Codex"
+  },
+  "plugins": [
+    {
+      "name": "work-session",
+      "source": "./claude-plugin",
+      "description": "Coordinate long-running implementation with bounded workers and independent review"
+    }
+  ]
+}

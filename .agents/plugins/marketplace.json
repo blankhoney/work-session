@@ -1,0 +1,21 @@
+{
+  "name": "work-session",
+  "interface": {
+    "displayName": "Work Session",
+    "developerName": "blankhoney"
+  },
+  "plugins": [
+    {
+      "name": "work-session",
+      "source": {
+        "source": "local",
+        "path": "./codex-plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

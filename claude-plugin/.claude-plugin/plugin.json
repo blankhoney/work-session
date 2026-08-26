@@ -1,0 +1,14 @@
+{
+  "name": "work-session",
+  "version": "1.0.0",
+  "description": "Coordinate long-running Claude Code implementation with bounded teammates and independent review",
+  "author": {
+    "name": "blankhoney"
+  },
+  "license": "MIT",
+  "keywords": [
+    "skill",
+    "orchestration",
+    "coding"
+  ]
+}

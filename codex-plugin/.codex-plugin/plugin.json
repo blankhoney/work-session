@@ -1,0 +1,30 @@
+{
+  "name": "work-session",
+  "version": "1.0.0",
+  "description": "Coordinate long-running Codex implementation with context-free subagents and an independent Sidecar session",
+  "author": {
+    "name": "blankhoney"
+  },
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "skill",
+    "orchestration",
+    "coding"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Work Session",
+    "shortDescription": "Coordinate long-running Codex implementation",
+    "longDescription": "Coordinate long-running implementation with bounded context-free subagents, asynchronous simplification, final QA, and one independent read-only Sidecar session.",
+    "developerName": "blankhoney",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Local",
+      "Orchestration"
+    ],
+    "defaultPrompt": [
+      "$work-session coordinate this implementation task."
+    ]
+  }
+}

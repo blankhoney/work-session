@@ -1,0 +1,14 @@
+.DS_Store
+*.log
+logs/
+reports/
+runs/
+evals/
+.claude/
+.codex/
+.cache/
+tmp/
+__pycache__/
+*.py[cod]
+.env
+.env.*
