@@ -1,0 +1,28 @@
+{
+  "UserPromptSubmit": [
+    {
+      "matcher": "*",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node \"__WORK_SESSION_ROOT__/hooks/work-session-bootstrap.cjs\" hook --host claude",
+          "timeout": 35,
+          "statusMessage": "Checking Work Session dependencies..."
+        }
+      ]
+    }
+  ],
+  "PreToolUse": [
+    {
+      "matcher": "Bash|Shell|shell_command|exec_command",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node \"__WORK_SESSION_ROOT__/hooks/work-session-bootstrap.cjs\" hook --host claude",
+          "timeout": 5,
+          "statusMessage": "Confirming Work Session dependency changes..."
+        }
+      ]
+    }
+  ]
+}

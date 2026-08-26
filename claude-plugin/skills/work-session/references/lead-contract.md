@@ -1,5 +1,9 @@
 # Leader construction contract
 
+## Session bootstrap
+
+Bootstrap is host/session preparation, not a construction gate or contract field. Accept only the registered hook's `WORK_SESSION_BOOTSTRAP/v1` capsule bound to this session and WorkRoot. `READY` applies its two rulesets once. `CONFIRMATION_REQUIRED` permits only its exact helper command and requires the PreToolUse permission prompt; denial continues without the optional modes and without retry. Missing/stale bootstrap context never authorizes raw install/config commands.
+
 ## Readiness and contract
 
 Decide from goal, project rules/plan, code, git/tasks, and artifacts. Retrieval is conditional: dispatch `luna-investigator` for one closed named-path fact or `luna-repository-explorer` for bounded discovery under one absolute root only when a construction fact/assertion is missing; history/self-reports are clues.

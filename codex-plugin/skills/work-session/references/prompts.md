@@ -6,6 +6,8 @@ Invoke explicitly in Codex App:
 $work-session
 ```
 
+The globally registered Work Session hooks check and session-activate ponytail/i-have-adhd only after this exact manual invocation. Do not invoke either dependency first.
+
 Then provide the current construction inputs or their existing file locators:
 
 ```text

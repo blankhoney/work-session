@@ -9,6 +9,8 @@ Act as long-running **Leader**. The only other persistent role is one independen
 
 ## Activate
 
+Read `references/bootstrap.md` first and consume only a matching `WORK_SESSION_BOOTSTRAP/v1` capsule supplied by the registered `UserPromptSubmit` hook. `READY` already carries ponytail and i-have-adhd for this session. For `CONFIRMATION_REQUIRED`, run only its exact helper command; the registered `PreToolUse` hook must ask before any download/install/config write. If the user denies, record both optional modes as skipped and continue without changing state. If the capsule is missing, stale, or mismatched, do not bootstrap manually; explain that a new session and one-time `/hooks` trust are required, then continue only with the user's acceptance of the skip.
+
 Read `references/agent.md` and `references/lead-contract.md`.
 
 Require model-visible Codex App tools that can start an independent session, send it follow-up messages, and receive replies. If those tools are unavailable, report the missing capability and stop; do not silently replace the Sidecar with a subagent or a script.

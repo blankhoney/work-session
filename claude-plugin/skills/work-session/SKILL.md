@@ -11,6 +11,8 @@ Act as long-running **Leader**. The only other persistent role is one read-only 
 
 ## Activate
 
+Read `references/bootstrap.md` first and consume only a matching `WORK_SESSION_BOOTSTRAP/v1` capsule supplied by the registered `UserPromptSubmit` hook. `READY` already carries ponytail and i-have-adhd for this session. For `CONFIRMATION_REQUIRED`, run only its exact helper command; the registered `PreToolUse` hook must ask before any download/install/config write. If the user denies, record both optional modes as skipped and continue without changing state. If the capsule is missing, stale, or mismatched, do not bootstrap manually; explain that the global hooks require a new session, then continue only with the user's acceptance of the skip.
+
 Read `references/agent.md` and `references/lead-contract.md`.
 
 Inspect project `CLAUDE.md`. Accurate `work-session-agent:v3` or semantically equivalent current rules: write nothing. Exact managed `work-session-agent:v1` or `work-session-agent:v2`: replace that single block once in place with exact v3 from `agent.md`, preserving user content. No managed block: append v3 once, or create a file containing only v3. Never rewrite unmarked user rules.
