@@ -78,3 +78,7 @@ Only these runtime packages are installable:
 - `codex-plugin/`
 
 PRDs, project history, logs, evaluation fixtures, test harnesses, local settings, and generated artifacts do not belong in this repository.
+
+## License
+
+[0BSD](LICENSE) — use, copy, modify, and distribute for any purpose, with no attribution requirement.
