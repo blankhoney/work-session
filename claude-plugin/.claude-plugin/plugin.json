@@ -1,6 +1,6 @@
 {
   "name": "work-session",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Coordinate long-running Claude Code implementation with bounded teammates and independent review",
   "author": {
     "name": "blankhoney"

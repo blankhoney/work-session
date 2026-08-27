@@ -6,8 +6,6 @@ Invoke explicitly in Codex App:
 $work-session
 ```
 
-The globally registered Work Session hooks check and session-activate ponytail/i-have-adhd only after this exact manual invocation. Do not invoke either dependency first.
-
 Then provide the current construction inputs or their existing file locators:
 
 ```text
@@ -24,4 +22,6 @@ QA 对象：<设计任务时确定的场景、命令、观察或产物>
 非目标：<不做的扩展、测试和防御性工作>
 ```
 
-Leader uses the fixed configured agent types with `fork_turns = "none"`; do not paste or override their model/effort instructions. Retrieval is Luna xhigh, construction/correction is Sol low, fresh simplify/review/final-QA agents are Sol high, and the independent App Sidecar is explicitly Sol high/read-only. Project `AGENTS.md`/`AGENTS.override.md` carries persistent rules and each brief includes only the relevant self-contained contract.
+The host harness chooses models, reasoning settings, execution-unit identities, tools, and dispatch. Work Session requires only the stated capabilities and lifecycle: narrow read-only retrieval when needed, scoped writable construction, fresh independent simplify/review/final QA, and one persistent independent read-only Sidecar App session. No custom type or registration is required. Request `fork_turns = "none"` only when the native harness supports it.
+
+Optional local tuning may localize this Skill or provide user-owned agent templates. Prefer a strong-capability model for the long-running Leader and a reasonably capable, cost-appropriate model for bounded construction; these are non-binding recommendations and never override the harness. Project `AGENTS.md`/`AGENTS.override.md` carries persistent rules and each brief includes only the relevant self-contained contract.

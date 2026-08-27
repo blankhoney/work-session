@@ -1,12 +1,8 @@
 # Leader construction contract
 
-## Session bootstrap
-
-Bootstrap is host/session preparation, not a construction gate or contract field. Accept only the registered hook's `WORK_SESSION_BOOTSTRAP/v1` capsule bound to this session and WorkRoot. `READY` applies its two rulesets once. `CONFIRMATION_REQUIRED` permits only its exact helper command and requires the PreToolUse permission prompt; denial continues without the optional modes and without retry. Missing/stale bootstrap context never authorizes raw install/config commands.
-
 ## Readiness and contract
 
-Decide from task-source files, current input, project rules/plan, code, git/tasks, and artifacts. Dispatch one bounded Luna-xhigh `explorer` or `read_only` only for a missing construction fact/assertion; history/self-reports are clues.
+Decide from task-source files, current input, project rules/plan, code, git/tasks, and artifacts. Dispatch one narrow read-only retrieval worker only for a missing construction fact/assertion; history/self-reports are clues.
 
 The managed `work-session-task:v1` block contains locators only. Its source files are the task contract: read them at activation, after context compaction/session resume, and before the final gate. Never copy their constraints into that block; derive the runtime contract below from the current files.
 
@@ -30,19 +26,19 @@ NonGoals: <excluded expansion/testing/defense>
 
 `ConstructionUnit` is a related small change set that completes/checks directly, never a split per Case, assertion, branch, line/helper, or UI state. `FeatureModule` includes the feature, related Cases/branches, direct integration, and original acceptance; it may contain several Units. Units use relevant subsets/observations of existing checks; Feature uses the complete check and one original QA object. Unit equals Feature means one simplify.
 
-Only Leader revises the contract from current evidence. Subagents and Sidecar cannot add requirements, tests, contracts, schemas, architecture, or completion conditions.
+Only Leader revises the contract from current evidence. Workers and Sidecar cannot add requirements, tests, contracts, schemas, architecture, or completion conditions.
 
 ## Brief and dispatch
 
-Every subagent uses `fork_turns = "none"` and a configured type without model/effort override:
+The host harness owns model, reasoning setting, identity/type, tools, concurrency, and dispatch. Choose execution units by capability rather than a configured name:
 
-- `explorer` / `read_only`: conditional Luna-xhigh retrieval;
-- `work_session_constructor`: Sol-low construction/correction, reusable only for unchanged contract/source identity;
-- `work_session_simplifier`: fresh one-shot Sol-high exact-scope simplify;
-- `work_session_reviewer`: fresh one-shot Sol-high bounded audit only when the original task requires it; non-gating and not a Sidecar substitute;
-- `work_session_tester`: fresh one-shot Sol-high final QA or failed-item rerun.
+- conditional narrow read-only retrieval;
+- scoped writable construction/correction, reusable only for unchanged contract/source identity;
+- fresh one-shot independent exact-scope simplify;
+- fresh one-shot independent bounded audit only when the original task requires it, non-gating and not a Sidecar substitute;
+- fresh one-shot independent final QA or failed-item rerun.
 
-No subagent creates children. Simplifier, reviewer, and tester receive no parent turns, prior report, worker chat, or resumed context.
+Request `fork_turns = "none"` when the native harness supports it; otherwise use the freshest context-isolated execution available. Local templates/registrations are optional and missing configuration never blocks. No execution unit creates children. Simplifier, reviewer, and tester receive no parent turns, prior report, worker chat, or resumed context.
 
 ```text
 TEMPORARY TASK
@@ -62,7 +58,7 @@ Use minimum sufficient concurrency and one writer per path. Expand scope only by
 
 ## Asynchronous small-scope simplify
 
-Simplify is one fresh context-free `work_session_simplifier` subagent, not a slash command. It preserves observable behavior, stable/external interfaces, data ownership, dependency direction, schema/config, test intent, and QA object.
+Simplify is one fresh context-free execution unit, not a slash command. It preserves observable behavior, stable/external interfaces, data ownership, dependency direction, schema/config, test intent, and QA object.
 
 For each Unit, prove relevant assertions, mark `construction-complete`, record `SimplifyBaseIdentity` for exact scope, and start one asynchronous simplify. Stable-interface calls/reads and non-overlap construction never wait.
 
@@ -70,13 +66,13 @@ Construction wins overlap. Lateness alone remains valid. Only BaseIdentity/scope
 
 After all Units complete, later non-overlap construction continues while every still-valid Unit simplify settles. Integrate valid changes, prove complete Feature assertions, and reach FeatureModule integration cutoff; there is no aggregate simplify.
 
-Each responsible construction subagent returns one consolidated existing `MODULE RESULT`: Unit/base identity/contract in `Contract`, scope in `SimplifyScope`, paths/disposition in `SimplifyTouched`, assertions in `ShortTest`/`ShortEvidence`, and raw duration/hidden overlap/finalization wait/blocker in `Remaining`. Do not forward raw opinions or add schema.
+Each responsible construction worker returns one consolidated existing `MODULE RESULT`: Unit/base identity/contract in `Contract`, scope in `SimplifyScope`, paths/disposition in `SimplifyTouched`, assertions in `ShortTest`/`ShortEvidence`, and raw duration/hidden overlap/finalization wait/blocker in `Remaining`. Do not forward raw opinions or add schema.
 
 ## Sidecar and correction
 
-At first Feature review, start one independent read-only Codex App session explicitly configured as `gpt-5.6-sol` with reasoning effort `high` for fixed WorkRoot. Verify the returned model/effort/read-only/identity; block if the App tools cannot set or verify them. Do not fork Leader turns. Initialize it from `references/workers/sidecar.md` plus a self-contained brief containing `ReviewId`, WorkRoot, source identity, contract, current paths/diff, and expected/observed evidence. Reuse the App-owned session identity and two-way messaging; accept one matching terminal result per ReviewId and reject stale/mismatched identity.
+At first Feature review, start one independent read-only Codex App session for fixed WorkRoot. Do not fork Leader turns or require control/verification of a particular model or reasoning setting. Initialize it from `references/workers/sidecar.md` plus a self-contained brief containing `ReviewId`, WorkRoot, source identity, contract, current paths/diff, and expected/observed evidence. Reuse the App-owned session identity and two-way messaging; accept one matching terminal result per ReviewId and reject stale/mismatched identity.
 
-`PASS` closes review. `IMPROVE` is report-only: no dispatch, code, test, or QA. One current proven `BLOCK` may be sent once to `work_session_constructor` for the smallest correction; never repeat Sidecar after `BLOCK`.
+`PASS` closes review. `IMPROVE` is report-only: no dispatch, code, test, or QA. One current proven `BLOCK` may be sent once to a scoped construction worker for the smallest correction; never repeat Sidecar after `BLOCK`.
 
 ## MODULE RESULT
 
@@ -97,6 +93,6 @@ Remaining: <raw/hidden/finalization wait and blocker/note>
 
 ## Final gate
 
-After integration cutoff, Sidecar, and any correction, reread task-source files. Launch a fresh `work_session_tester` with `fork_turns = "none"` and a self-contained brief to run exact original `QAObject`/`FinalAcceptance` once. Add no checks. A failed item may receive one bounded constructor repair and only that item is rerun by another fresh tester. Leader may mechanically summarize bounded paths/checks/status/blockers without a mandatory validator/summarizer or invented conclusions.
+After integration cutoff, Sidecar, and any correction, reread task-source files. Launch a fresh independent tester with a self-contained context-free brief to run exact original `QAObject`/`FinalAcceptance` once. Add no checks. A failed item may receive one bounded construction repair and only that item is rerun by another fresh tester. Leader may mechanically summarize bounded paths/checks/status/blockers without a mandatory validator/summarizer or invented conclusions.
 
 Never push or create the user's final commit. Optional checkpoints are local coherent-boundary snapshots only when policy permits.

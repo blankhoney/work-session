@@ -74,15 +74,12 @@ A fresh, exact-scope simplifier cleans up each completed unit while other safe w
 
 A fresh tester runs the original acceptance object. Only evidence-backed failures receive a bounded repair; the Lead then closes the session with the observed result.
 
-## Companion Skills
+## Optional Companion Skills
 
-> [!IMPORTANT]
-> The full Work Session workflow requires two companion Skills: [`ponytail`](https://github.com/DietrichGebert/ponytail) and [`i-have-adhd`](https://github.com/ayghri/i-have-adhd).
+- **[`ponytail`](https://github.com/DietrichGebert/ponytail)** can reinforce the smallest implementation that actually works and resist speculative complexity.
+- **[`i-have-adhd`](https://github.com/ayghri/i-have-adhd)** can keep progress, blockers, and next actions short, direct, and easy to scan.
 
-- **`ponytail`** pushes toward the smallest implementation that actually works and resists speculative complexity.
-- **`i-have-adhd`** keeps progress, blockers, and next actions short, direct, and easy to scan.
-
-Work Session checks both companions during bootstrap. If either needs installation or project enablement, it asks before making any network or configuration change. If you decline, Work Session continues without changing your environment and records both companion modes as skipped.
+Both are optional and independently managed. Work Session does not check, install, configure, enable, or invoke them.
 
 ## Best for
 

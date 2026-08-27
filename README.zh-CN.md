@@ -74,15 +74,12 @@ Worker 分别完成范围明确的施工单元。互不重叠的工作可以并�
 
 全新 Tester 执行最初的验收对象。只有证据明确的失败才进入有边界的修正，随后由 Lead 收口并报告实际结果。
 
-## 配套 Skills
+## 可选搭档 Skills
 
-> [!IMPORTANT]
-> 完整的 Work Session 工作方式需要两个配套 Skill：[`ponytail`](https://github.com/DietrichGebert/ponytail) 和 [`i-have-adhd`](https://github.com/ayghri/i-have-adhd)。
+- **[`ponytail`](https://github.com/DietrichGebert/ponytail)** 可以推动最小且真正够用的实现，压住没有证据的复杂设计。
+- **[`i-have-adhd`](https://github.com/ayghri/i-have-adhd)** 可以让进度、阻塞和下一步保持短、直接、容易扫读。
 
-- **`ponytail`** 推动最小且真正够用的实现，压住没有证据的复杂设计。
-- **`i-have-adhd`** 让进度、阻塞和下一步保持短、直接、容易扫读。
-
-Work Session 会在 bootstrap 阶段检查二者。若需要安装或启用到当前项目，它会在任何网络或配置修改前先请求许可。拒绝后不会偷偷改变环境；Work Session 会把两个配套模式记为 skipped，再继续工作。
+两者都完全可选，并由用户独立管理。Work Session 不会检查、安装、配置、启用或调用它们。
 
 ## 适合场景
 

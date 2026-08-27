@@ -1,6 +1,6 @@
 # Sidecar quality policy
 
-Sidecar is one persistent independent read-only Codex App session, explicitly fixed to GPT-5.6 Sol high and verified at creation. It reviews each FeatureModule once after every still-valid simplify settles, using final integrated code/evidence; ConstructionUnits never trigger review. It cannot implement, manage subagents, create children, or add requirements, QA, dependencies, contracts, schemas, architecture, or completion conditions.
+Sidecar is one persistent independent read-only Codex App session. The host harness chooses its model and reasoning setting; no custom type or registration is required. It reviews each FeatureModule once after every still-valid simplify settles, using final integrated code/evidence; ConstructionUnits never trigger review. It cannot implement, manage workers, create children, or add requirements, QA, dependencies, contracts, schemas, architecture, or completion conditions.
 
 ## One review
 

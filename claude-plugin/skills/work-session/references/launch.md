@@ -22,7 +22,7 @@ If it is relevant, perform the Shadow Mind's responsibility now. Call report_to_
 
 ## Claude Code adapter — outside the copied prompt
 
-Create a fresh one-shot Agent/teammate; never fork the Lead conversation. Send one message in the same order as Pi's `buildShadowRequest`:
+Create a fresh one-shot execution unit; never fork the Lead conversation. The host harness chooses its model, effort, identity/type, and native dispatch, and no custom Agent template is required. Send one message in the same order as Pi's `buildShadowRequest`:
 
 ```text
 <minimal audit envelope rendered as read-only trajectory>

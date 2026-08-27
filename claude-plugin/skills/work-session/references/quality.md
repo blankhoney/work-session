@@ -1,6 +1,6 @@
 # Sidecar quality policy
 
-Sidecar is the one persistent independent read-only quality role, launched as the fixed user-level `work-session-sidecar` Agent (GPT-5.6 Sol high) and reused as one named Mate. It reviews each FeatureModule once after every still-valid simplify settles, using final integrated code/evidence; ConstructionUnits never trigger review. It cannot implement, manage teammates, create children, or add requirements, QA, dependencies, contracts, schemas, architecture, or completion conditions.
+Sidecar is the one persistent independent read-only quality role. The host harness chooses its model, effort, identity/type, and native dispatch; no custom template is required. It reviews each FeatureModule once after every still-valid simplify settles, using final integrated code/evidence; ConstructionUnits never trigger review. It cannot implement, manage workers, create children, or add requirements, QA, dependencies, contracts, schemas, architecture, or completion conditions.
 
 ## One review
 
