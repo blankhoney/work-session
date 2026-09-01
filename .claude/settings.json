@@ -1,0 +1,21 @@
+{
+  "enabledPlugins": {
+    "i-have-adhd@i-have-adhd": true
+  },
+  "skillOverrides": {
+    "ponytail": "user-invocable-only"
+  },
+  "hooks": {
+    "PostCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /Users/blank/.claude/hooks/ponytail-recompact.py",
+            "statusMessage": "Reloading ponytail full mode"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Work Session"
+  short_description: "Coordinate long-running Codex implementation"
+  default_prompt: "Use $work-session for this task."
+
+policy:
+  allow_implicit_invocation: false
